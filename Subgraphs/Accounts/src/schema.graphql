@@ -1,0 +1,23 @@
+# required when moving to 13.9.10, optional on older version
+directive @rename on SCHEMA
+
+schema {
+  query: Query
+}
+
+type Query {
+  userById(id: Int!): User
+  usersById(ids: [Int!]!): [User!]
+  userByUsername(username: String!): User
+  users: [User!]
+}
+
+type User {
+  id: Int!
+  name: String!
+  birthdate: String!
+  username: String!
+}
+
+
+
