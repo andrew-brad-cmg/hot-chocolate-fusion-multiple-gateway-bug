@@ -1,6 +1,6 @@
 # hot-chocolate-fusion-multiple-gateway-bug
 
-This repo is linked to a Github issue filed here: <>
+This repo is linked to a Github issue filed here: https://github.com/ChilliCream/graphql-platform/issues/7386
 
 It is an updated form of the sample repo for Fusion located here: https://github.com/ChilliCream/hotchocolate-examples/tree/master/misc/Fusion1
 
