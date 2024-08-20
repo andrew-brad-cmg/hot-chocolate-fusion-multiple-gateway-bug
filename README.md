@@ -14,7 +14,7 @@ Repro steps:
 
 - Clone and build this repo. Open a terminal from the root: `dotnet build`
 - Run a `dotnet tool restore`
-- Export Accounts subgraph and compose it into `gateway1.fgp`:
+- Pack Accounts subgraph and compose it into `gateway1.fgp`:
 
 ```
 dotnet fusion subgraph pack -w ./Subgraphs/Accounts/src;
@@ -22,7 +22,7 @@ dotnet fusion compose --subgraph-package-file ./Subgraphs/Accounts/src/Account.f
 ```
 
 - Observe/validate the produced `gateway1.fgp` file.
-- Export Reviews subgraph and compose it into `gateway2.fgp`:
+- Pack Reviews subgraph and compose it into `gateway2.fgp`:
 
 ```
 dotnet fusion subgraph pack -w ./Subgraphs/Reviews/;
